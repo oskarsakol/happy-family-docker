@@ -5,7 +5,7 @@ env:
   DOCKER_BUILDKIT: 1
   COMPOSE_DOCKER_CLI_BUILD: 1
   CELERY_BROKER_URL: 'redis://redis:6379/0'
-  DATABASE_URL: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@0.0.0.0:5432/${POSTGRES_DB}"
+  DATABASE_URL: 'postgresql://localhost/{{cookiecutter.project_slug}}'
 
 on:
   pull_request:
