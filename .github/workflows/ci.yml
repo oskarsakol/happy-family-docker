@@ -4,6 +4,7 @@ name: CI
 env:
   DOCKER_BUILDKIT: 1
   COMPOSE_DOCKER_CLI_BUILD: 1
+  CELERY_BROKER_URL: 'redis://redis:6379/0'
 
 on:
   pull_request:
